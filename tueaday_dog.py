@@ -2,6 +2,8 @@ import tweepy
 import os
 
 
+# Function recieves event and context because GCP Scheduler requires it to
+# recieve 2 parameters. These parameters are not used.
 def tueaday_dog(event, context):
     # Credentials for loging in
     CONSUMER_KEY = os.getenv("CONSUMER_KEY")
